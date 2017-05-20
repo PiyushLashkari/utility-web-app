@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	
+	<definition name="error" template="/WEB-INF/views/error.jsp" /> 
+	
+    <!-- Template for views -->
+    
+    <definition name="mainTemplate" template="/WEB-INF/views/Layouts/_Main.jsp">
+    	<put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/views/Layouts/_Header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/Layouts/_Footer.jsp" />   
+    </definition>
+    
+    <!-- Views -->
+    
+    <definition name="home" extends="mainTemplate">
+    	<put-attribute name="title" value="Home" />
+		<put-attribute name="body" value="/WEB-INF/views/home.jsp" /> 
+    </definition>
+    
+    <definition name="encryption" extends="mainTemplate">
+    	<put-attribute name="title" value="Home" />
+		<put-attribute name="body" value="/WEB-INF/views/encryption.jsp" /> 
+    </definition>
+    
+    <definition name="decryption" extends="mainTemplate">
+    	<put-attribute name="title" value="Home" />
+		<put-attribute name="body" value="/WEB-INF/views/decryption.jsp" /> 
+    </definition>
+    
+    <definition name="result" extends="mainTemplate">
+    	<put-attribute name="title" value="Result" />
+		<put-attribute name="body" value="/WEB-INF/views/result.jsp" /> 
+    </definition>
+    
+</tiles-definitions>
